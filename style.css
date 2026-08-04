@@ -313,3 +313,310 @@ body{
     }
 
 }
+
+/* ===========================
+   Large Desktop (1400px+)
+=========================== */
+
+@media (min-width: 1400px) {
+
+    .container{
+        max-width:1400px;
+    }
+
+    .idea-container{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+}
+
+/* ===========================
+   Desktop / Laptop
+=========================== */
+
+@media (max-width:1200px){
+
+    .container{
+        width:100%;
+    }
+
+    .idea-container{
+        grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    }
+
+}
+
+/* ===========================
+   Tablets Landscape
+=========================== */
+
+@media (max-width:992px){
+
+    body{
+        padding:30px;
+    }
+
+    .hero{
+        padding:30px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .board-summary{
+        width:150px;
+        height:150px;
+    }
+
+    .board-summary h2{
+        font-size:2.5rem;
+    }
+
+    .workspace,
+    .idea-form{
+        padding:25px;
+    }
+
+    .idea-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* ===========================
+   Tablets Portrait
+=========================== */
+
+@media (max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:25px;
+    }
+
+    .hero h1{
+        font-size:1.9rem;
+    }
+
+    .hero p{
+        font-size:.95rem;
+    }
+
+    .board-summary{
+        width:130px;
+        height:130px;
+    }
+
+    .board-summary h2{
+        font-size:2.2rem;
+    }
+
+    .workspace-header{
+        flex-direction:column;
+        gap:15px;
+        align-items:stretch;
+    }
+
+    #clearBoard{
+        width:100%;
+    }
+
+    #ideaForm button{
+        width:100%;
+    }
+
+    .idea-container{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* ===========================
+   Large Phones
+=========================== */
+
+@media (max-width:576px){
+
+    body{
+        padding:15px;
+    }
+
+    .hero,
+    .idea-form,
+    .workspace{
+        border-radius:18px;
+        padding:20px;
+    }
+
+    .hero h1{
+        font-size:1.6rem;
+    }
+
+    .hero p{
+        font-size:.9rem;
+    }
+
+    .board-summary{
+        width:115px;
+        height:115px;
+    }
+
+    .board-summary h2{
+        font-size:2rem;
+    }
+
+    .idea-form h2,
+    .workspace-header h2{
+        font-size:1.3rem;
+    }
+
+    #ideaForm input,
+    #ideaForm textarea{
+        padding:14px;
+        font-size:.95rem;
+    }
+
+    #ideaForm button{
+        padding:13px;
+    }
+
+    .idea-card{
+        padding:18px;
+        gap:15px;
+    }
+
+    .idea-card h3{
+        font-size:1.15rem;
+    }
+
+    .idea-card p{
+        font-size:.9rem;
+    }
+
+    .status{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .status select{
+        width:100%;
+    }
+
+    .remove-btn{
+        width:100%;
+    }
+
+    .card-actions{
+        justify-content:stretch;
+    }
+
+}
+
+/* ===========================
+   Small Phones
+=========================== */
+
+@media (max-width:400px){
+
+    body{
+        padding:10px;
+    }
+
+    .hero,
+    .idea-form,
+    .workspace{
+        padding:16px;
+    }
+
+    .hero h1{
+        font-size:1.35rem;
+    }
+
+    .hero p{
+        font-size:.85rem;
+    }
+
+    .board-summary{
+        width:95px;
+        height:95px;
+    }
+
+    .board-summary span{
+        font-size:.75rem;
+    }
+
+    .board-summary h2{
+        font-size:1.6rem;
+        margin-top:5px;
+    }
+
+    .workspace-header h2,
+    .idea-form h2{
+        font-size:1.15rem;
+    }
+
+    .idea-card{
+        padding:15px;
+        border-radius:15px;
+    }
+
+    .idea-card h3{
+        font-size:1rem;
+    }
+
+    .idea-card p{
+        font-size:.85rem;
+        line-height:1.5;
+    }
+
+    #ideaForm input,
+    #ideaForm textarea,
+    #ideaForm button,
+    .status select,
+    .remove-btn,
+    #clearBoard{
+        font-size:.9rem;
+    }
+
+}
+
+/* ===========================
+   Very Small Devices
+=========================== */
+
+@media (max-width:320px){
+
+    .hero h1{
+        font-size:1.2rem;
+    }
+
+    .hero p{
+        display:none;
+    }
+
+    .board-summary{
+        width:85px;
+        height:85px;
+    }
+
+    .board-summary h2{
+        font-size:1.4rem;
+    }
+
+    .idea-card{
+        padding:12px;
+    }
+
+    #ideaForm input,
+    #ideaForm textarea{
+        padding:12px;
+    }
+
+}
