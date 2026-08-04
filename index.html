@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Idea Studio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header class="hero">
+
+        <div>
+            <h1>Project Idea Studio</h1>
+            <p>Capture ideas. Track progress. Build something amazing.</p>
+        </div>
+
+        <div class="board-summary">
+            <span>Total Ideas</span>
+            <h2 id="ideaCount">0</h2>
+        </div>
+
+    </header>
+
+
+    <!-- Create Idea -->
+    <section class="idea-form">
+
+        <h2>Create New Project</h2>
+
+        <form id="ideaForm">
+
+            <input
+                id="projectTitle"
+                type="text"
+                placeholder="Project title"
+                required
+            >
+
+            <textarea
+                id="projectDescription"
+                placeholder="Describe your project..."
+                rows="4"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Add Project
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Workspace -->
+    <section class="workspace">
+
+        <div class="workspace-header">
+
+            <h2 id="boardTitle">
+                My Project Workspace
+            </h2>
+
+            <button id="clearBoard">
+                Clear Board
+            </button>
+
+        </div>
+
+        <div id="ideaContainer" class="idea-container">
+
+            <!-- JS creates project cards here -->
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
